@@ -1,0 +1,6 @@
+﻿@typeparam T where T : IMyInterface
+<h3>NonInferComponent</h3>
+
+@code {
+    [Parameter] public IEnumerable<T> Items { get; set; } = default!;
+}
